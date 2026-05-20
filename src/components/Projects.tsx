@@ -48,7 +48,20 @@ function ProjectCard({ project }: { project: Project }) {
               ))}
             </div>
           </div>
-          <div>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
+            {project.image ? (
+              <img
+                src={project.image}
+                alt={`${project.title} preview`}
+                style={{
+                  width: '100%',
+                  borderRadius: '8px',
+                  border: '1px solid rgba(255,255,255,0.08)',
+                  objectFit: 'cover',
+                  maxHeight: '160px',
+                }}
+              />
+            ) : null}
             <div className="card-metrics">
               {project.metrics.map((m) => (
                 <div key={m.label} className="metric">

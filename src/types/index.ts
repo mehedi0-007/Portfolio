@@ -9,6 +9,7 @@ export interface ProjectMetric {
 
 export interface Project {
   id: string;
+  image?: string;
   category: string;
   status: ProjectStatus;
   title: string;
