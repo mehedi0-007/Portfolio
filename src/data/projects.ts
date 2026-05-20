@@ -5,7 +5,7 @@ export const projects: Project[] = [
     id: "url-shortener",
     category: "Full Stack · NestJS",
     status: "live",
-    image: "./public/image.png",
+    image: "/image.png",
     title: "Full stack – URL Shortener",
     description:
       "Full-stack URL shortening platform with dual-token JWT auth, Passport.js RBAC, and Prisma-managed PostgreSQL schema. Tracks per-visit geolocation analytics via geoip-lite with click counts, daily trends, and top countries. Next.js dashboard includes paginated URL management, expiry controls, short code regeneration, and a live admin panel.",
