@@ -5,12 +5,14 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
+    "build": "npx tsc && npx vite build",
     "preview": "vite preview"
   },
   "dependencies": {
     "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react-dom": "^18.3.1",
+    "typescript": "^5.x.x",
+    "vite": "^5.x.x"
   },
   "devDependencies": {
     "@types/react": "^18.3.1",
